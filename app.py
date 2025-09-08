@@ -11,7 +11,7 @@ import os
 app = FastAPI(title="ID Card Document AI Processor")
 
 # Configure Gemini API
-GEMINI_API_KEY = "AIzaSyAJnNkOFH1X4ophomVnK06egUpxj2Iwqfs"
+GEMINI_API_KEY = "YOUR_GEMINI_API_KEY"
 genai.configure(api_key=GEMINI_API_KEY)
 
 def process_document_sample(
@@ -293,3 +293,4 @@ async def health_check():
 
 if __name__ == "__main__":
     uvicorn.run(app, host="0.0.0.0", port=8000)
+
